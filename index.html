@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="codedir.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Code Directory - A workplace for HTML CSS and Javascript editing
+    </title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="left-part">
+          <a href="/"><img src="codedir.png" alt="" /></a>
+        </div>
+        <div class="right-part">
+          <p><</p>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="/contactus.html">Contact</a></li>
+            <li>
+              <a
+                href="https://www.freeprivacypolicy.com/live/c02eb418-7977-4652-aba3-11f0def64ce0"
+                >Policy</a
+              >
+            </li>
+          </ul>
+          <p>/></p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="text">
+          <h2><span><</span> Get In Coding <span>/></span></h2>
+          <p>
+            Join the revolution to learn and create amazing web development
+            works and engage in real world projects!
+          </p>
+          <a href="editor.html"><button>Start Coding Now</button></a>
+        </div>
+        <div class="img-po">
+          <div class="img-cont">
+            <img
+              src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="coding directory"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    gsap.from(".text h2", {
+      y: -290,
+      opacity: 0,
+      delay: 0.2,
+    });
+    gsap.from(".text p", {
+      x: -290,
+      opacity: 0,
+      delay: 1,
+    });
+    gsap.from(".text button", {
+      scale: 0,
+      opacity: 0,
+      delay: 1.5,
+      ease: Power4,
+    });
+    gsap.from(".content img", {
+      y: -290,
+      opacity: 0,
+      delay: 1.8,
+    });
+    gsap.from(".nav", {
+      y: -290,
+      opacity: 0,
+      delay: 0.008,
+    });
+  </script>
+</html>
